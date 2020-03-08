@@ -2,6 +2,7 @@
   "name": "demo-oslo-bysykkel",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@testing-library/jest-dom": "^4.2.4",
@@ -21,7 +22,10 @@
   "eslintConfig": {
     "extends": "react-app",
     "rules": {
-      "quotes": ["error", "single"]
+      "quotes": [
+        "error",
+        "single"
+      ]
     }
   },
   "browserslist": {

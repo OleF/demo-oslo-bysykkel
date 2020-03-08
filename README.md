@@ -1,3 +1,14 @@
+## Hvordan kjøre appen
+Applikasjonen er laget med create react app. <br /><br />
+Du må ha node og npm installert. 
+Når du står i rootmappen kjører du `npm i` da vil applikasjonen installeres. 
+Deretter kjører du `npm start` applikasjonen vil da starte på [http://localhost:3000](http://localhost:3000). 
+
+Jeg har også lagt ved en ferdigbygget versjon av applikasjonen. 
+Den ligger under ./build. For å kjøre den trenger du bare å dobbeltklikke på index.html  
+
+<br /><br /><br /><br /><br /><br />
+# Readme fra create react app
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
