@@ -1,6 +1,6 @@
 import texts from '../../texts/texts_no';
 
-const statusMelding = status => {
+const statusMessage = status => {
     const statusMessages = texts.stationTable.status;
     switch (status) {
         case 'LOADING' :
@@ -14,4 +14,4 @@ const statusMelding = status => {
     }
 };
 
-export default statusMelding;
+export default statusMessage;

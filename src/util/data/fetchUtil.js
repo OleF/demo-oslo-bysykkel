@@ -1,4 +1,4 @@
-const fetchData = async (url) => {
+const fetchData = async url => {
     try {
         const response = await fetch(url);
 
