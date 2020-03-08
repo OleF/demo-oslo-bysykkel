@@ -1,12 +1,12 @@
 import {useEffect, useState} from 'react';
 import config from '../../config.json';
-import fetchData from "../../util/data/fetchUtil";
+import fetchData from '../../util/data/fetchUtil';
 
 const useStationData = () => {
     const [stations, setStations] = useState([]);
     const [status, setStatus] = useState('LOADING');
     const updateStations = (stations, statuses) => {
-        const mapedStations = stations.map(({name, capacity, station_id}) => {
+        const mappedStations = stations.map(({name, capacity, station_id}) => {
             const {
                 num_docks_available,
                 num_bikes_available
@@ -18,7 +18,8 @@ const useStationData = () => {
                 num_bikes_available
             };
         });
-        setStations(mapedStations);
+        setStations(mappedStations);
+        setStatus('DATA_COLLECTED');
     };
 
     useEffect(() => {
@@ -41,7 +42,7 @@ const useStationData = () => {
         };
 
         fetchStationData()
-            .then(() => setStatus('DATA_COLLECTED'))
+            .then(() => console.debug('retrieved data'))
             .catch(() => setStatus('ERROR'));
 
     }, []);

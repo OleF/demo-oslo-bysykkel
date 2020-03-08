@@ -1,41 +1,30 @@
-import React from "react";
-import useStationData from "./useStationData";
-import MaterialTable from "material-table";
+import React from 'react';
+import texts from '../../texts/texts_no';
+import styles from './stationTable.module.css'
+import useStationData from './useStationData';
+import MaterialTable from 'material-table';
+import statusMelding from './statusMelding';
 
 const StationTable = () => {
-
     // const StationInformationResponse = await fetch('http://www.mocky.io/v2/5e6397983600007500e8dd4a');
 
     const {stations, status} = useStationData();
-
-    // return (
-    //     <table>
-    //         <tr>
-    //             <th>Navn</th>
-    //             <th>Tilgjengelige låser</th>
-    //             <th>Tilgjengelige sykler</th>
-    //         </tr>
-    //         {stations.map(({name, num_bikes_available, num_docks_available}) => {
-    //             return (
-    //                 <tr>
-    //                     <td>{name}</td>
-    //                     <td>{num_docks_available}</td>
-    //                     <td>{num_bikes_available}</td>
-    //                 </tr>
-    //             );
-    //         })}
-    //     </table>
-    // );
-    return(
-        <div style={{ maxWidth: "100%" }}>
+    return (
+        <div className={styles.tableContainer}>
             <MaterialTable
                 columns={[
-                    { title: "Navn", field: "name" },
-                    { title: "Tilgjengelige låser", field: "num_docks_available", type: "numeric"  },
-                    { title: "Tilgjengelige sykler", field: "num_bikes_available", type: "numeric" }
+                    {title: texts.stationTable.name, field: 'name'},
+                    {title: texts.stationTable.availableLocks, field: "num_docks_available", type: "numeric"},
+                    {title: texts.stationTable.availableBikes, field: "num_bikes_available", type: "numeric"}
                 ]}
+                localization={{
+                    body: {
+                        emptyDataSourceMessage: statusMelding(status)
+                    }
+                }}
                 data={stations}
-                title="Oslo Bysykkel stasjoner:"
+                isLoading={status === 'LOADING'}
+                title={texts.stationTable.title}
             />
         </div>
     );

@@ -1,4 +1,7 @@
 {
+  "metadata": {
+    "appName": "Demo Oslo Bysykkel"
+  },
   "oslobysykkel": {
     "host": "https://gbfs.urbansharing.com/oslobysykkel.no",
     "endpoints": {

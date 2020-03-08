@@ -1,0 +1,13 @@
+{
+  "stationTable": {
+    "title": "Oslo Bysykkel stasjoner:",
+    "name": "Navn",
+    "availableLocks": "Tilgjengelige låser",
+    "availableBikes": "Tilgjengelige sykler",
+    "status": {
+      "loading": "Laster data",
+      "error": "Oida, kunne ikke hente data. Prøv igjen :/",
+      "dataCollected": "Ingen data tilgjengelig"
+    }
+  }
+}
