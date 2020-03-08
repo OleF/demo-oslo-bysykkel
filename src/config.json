@@ -1,0 +1,9 @@
+{
+  "oslobysykkel": {
+    "host": "https://gbfs.urbansharing.com/oslobysykkel.no",
+    "endpoints": {
+      "stationStatus": "/station_status.json",
+      "stationInformation": "/station_information.json"
+    }
+  }
+}
