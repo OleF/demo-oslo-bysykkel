@@ -1,14 +1,13 @@
 import React from 'react';
+import MaterialTable from 'material-table';
 import texts from '../../texts/texts_no';
 import styles from './stationTable.module.css'
 import useStationData from './useStationData';
-import MaterialTable from 'material-table';
 import statusMessage from './statusMessage';
 
 const StationTable = () => {
-    // const StationInformationResponse = await fetch('http://www.mocky.io/v2/5e6397983600007500e8dd4a');
-
     const {stations, status} = useStationData();
+
     return (
         <div className={styles.tableContainer}>
             <MaterialTable
