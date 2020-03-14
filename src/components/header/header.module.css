@@ -1,0 +1,45 @@
+.logo {
+    display: inline-block;
+    white-space: nowrap;
+
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    vertical-align: middle;
+    padding-left: 1vh;
+}
+
+.logoContainer {
+    flex-grow: 8;
+}
+
+.nav {
+    display: inline-block;
+    flex-grow: 2;
+    height: 100%;
+}
+
+.navBtn {
+    height: 100%;
+    width: 100%;
+
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #f9f9f9;
+
+    cursor: pointer;
+}
+
+.navBtn:hover {
+    background-color: #d7d7d7;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    width: 100%;
+
+    background-color: #f9f9f9;
+}

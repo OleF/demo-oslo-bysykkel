@@ -1,12 +1,20 @@
-import React from 'react';
-import MainContainer from './components/mainContainer/MainContainer';
+import React, {useState} from 'react';
+import Header from './components/header/Header';
+import styles from './app.module.css';
+import BikeMap from './components/bikeMap/BikeMap';
+import StationTable from './components/stationTable/StationTable';
 
-function App() {
-  return (
-    <div>
-     <MainContainer/>
-    </div>
-  );
-}
+const App = () => {
+    const [isMapActive, setIsMapActive] = useState(true);
+
+    return (
+        <div >
+            <Header handleOnClick={() => setIsMapActive(!isMapActive)}/>
+            <main className={styles.container}>
+                {isMapActive ? <BikeMap/> : <StationTable/>}
+            </main>
+        </div>
+    );
+};
 
 export default App;

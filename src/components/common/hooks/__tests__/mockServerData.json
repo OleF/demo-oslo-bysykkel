@@ -1,0 +1,35 @@
+{
+  "stationInformation": {
+    "last_updated": 1565561,
+    "ttl": 10,
+    "data": {
+      "stations": [
+        {
+          "station_id": "1755",
+          "name": "Aker Brygge",
+          "address": "Aker Brygge",
+          "lat": 59.91118372188379,
+          "lon": 10.730034556850455,
+          "capacity": 33
+        }
+      ]
+    }
+  },
+  "stationStatus": {
+    "last_updated": 1565561,
+    "ttl": 10,
+    "data": {
+      "stations": [
+        {
+          "station_id": "1755",
+          "is_installed": 1,
+          "is_renting": 1,
+          "is_returning": 1,
+          "last_reported": 1584291348,
+          "num_bikes_available": 0,
+          "num_docks_available": 33
+        }
+      ]
+    }
+  }
+}

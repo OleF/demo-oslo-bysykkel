@@ -9,5 +9,10 @@
       "error": "Oida, kunne ikke hente data. Prøv igjen :/",
       "dataCollected": "Ingen data tilgjengelig"
     }
+  },
+  "bikePopup": {
+    "locks": "Låser",
+    "bikes": "Sykler",
+    "capacity": "Kapasitet"
   }
 }

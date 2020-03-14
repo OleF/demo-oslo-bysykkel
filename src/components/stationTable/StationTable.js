@@ -2,7 +2,7 @@ import React from 'react';
 import MaterialTable from 'material-table';
 import texts from '../../texts/texts_no';
 import styles from './stationTable.module.css'
-import useStationData from './useStationData';
+import useStationData from '../common/hooks/useStationData';
 import statusMessage from './statusMessage';
 
 const StationTable = () => {
