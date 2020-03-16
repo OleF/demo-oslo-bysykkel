@@ -6,7 +6,7 @@ import BikeStands from '../bikeStands/BikeStands';
 const BikeMap = () => {
     const {stations} = useStationData();
 
-    // Map is set default of first station, should use browser api ot get position.
+    // Map is set default to first station, should use browser api ot get position.
     const position = stations[0] ? {lat: stations[0].lat, lng: stations[0].lon} : {lat: 0, lng: 0};
 
     return (

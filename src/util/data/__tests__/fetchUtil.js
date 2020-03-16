@@ -29,7 +29,7 @@ describe('- fetchUtil', () => {
         expect(response).toBe('error');
     });
 
-    it('- should return error is 404', async () => {
+    it('- should return error if 404', async () => {
         fetchMock.mock('/url', 404);
 
         const response = await fetchData('/url');

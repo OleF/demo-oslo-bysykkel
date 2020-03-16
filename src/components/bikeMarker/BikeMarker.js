@@ -11,7 +11,6 @@ const BikeMarker = ({position, name, bikesAvailable, docksAvailable, capacity}) 
     </Marker>
 );
 
-
 BikeMarker.propTypes = {
     bikesAvailable: PropTypes.number.isRequired,
     capacity: PropTypes.number.isRequired,
